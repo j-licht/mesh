@@ -175,11 +175,36 @@ network TestNetwork
 	    parameters:
                 @display("p=50,325");
        }
-        hostB: TestHost {
+        host2: TestHost {
           @display("p=50,325");
        }
-	hostC: TestHost {
+	host3: TestHost {
           @display("p=50,400");
       }
+      host4: TestHost {
+          @display("p=150,325");
+       }
+        host5: TestHost {
+          @display("p=150,400");
+      }
+	host6: TestHost {
+          @display("p=250,325");
+       }
+        host7: TestHost {
+          @display("p=250,400");
+     }
+	host8: TestHost {
+          @display("p=350,325");
+       }
+        host9: TestHost {
+          @display("p=350,400");
+     }
+	host10: TestHost {
+          @display("p=450,325");
+       }
+        host11: TestHost {
+          @display("p=450,400");
+      }
+
                
 }
