@@ -170,6 +170,7 @@ network TestNetwork
         }
         radioMedium: <default("UnitDiskRadioMedium")> like IRadioMedium {
             @display("p=580,275");
+	    recordCommunicationLog = true;
         }
         hostA: AdhocHost {
 	    parameters:
