@@ -17,6 +17,9 @@ import inet.linklayer.contract.IWirelessInterface;
 import inet.mobility.contract.IMobility;
 import inet.networklayer.common.InterfaceTable;
 
+import inet.environment.common.PhysicalEnvironment;
+import inet.common.geometry.common.SimpleGeographicCoordinateSystem;
+
 
 module ASwitch
 {
@@ -165,6 +168,12 @@ network TestNetwork
         //visualizer: <default("IntegratedCanvasVisualizer")> like IIntegratedVisualizer if hasVisualizer() {
         //    @display("p=580,125");
        // }
+	physicalEnvironment: PhysicalEnvironment {
+            @display("p=580,425");
+        }
+	coordinateSystem: SimpleGeographicCoordinateSystem {
+		@display("p=580,350");
+	}
         configurator: Ipv4NetworkConfigurator {
             @display("p=580,200");
         }
@@ -174,37 +183,37 @@ network TestNetwork
         }
         hostA: AdhocHost {
 	    parameters:
-                @display("p=50,325");
+                @display("p=300,300");
        }
         host2: TestHost {
-          @display("p=50,325");
+          @display("p=300,300");
        }
 	host3: TestHost {
-          @display("p=50,400");
+          @display("p=400,300");
       }
       host4: TestHost {
-          @display("p=150,325");
+          @display("p=200,300");
        }
         host5: TestHost {
-          @display("p=150,400");
+          @display("p=300,200");
       }
 	host6: TestHost {
-          @display("p=250,325");
+          @display("p=300,400");
        }
         host7: TestHost {
-          @display("p=250,400");
+          @display("p=400,400");
      }
 	host8: TestHost {
-          @display("p=350,325");
+          @display("p=200,400");
        }
         host9: TestHost {
-          @display("p=350,400");
+          @display("p=400,200");
      }
 	host10: TestHost {
-          @display("p=450,325");
+          @display("p=200,200");
        }
         host11: TestHost {
-          @display("p=450,400");
+          @display("p=400,400");
       }
 
                

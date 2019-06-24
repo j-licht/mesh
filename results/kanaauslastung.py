@@ -39,8 +39,8 @@ for line in fh.readlines():
         end_time = float(columns[14])
      #   print('end_time' + str(end_time))
 
-print('control' + str(np.mean(control)))
-print('payload' + str(np.mean(payload)))
+print('control ' + str(np.mean(control)))
+print('payload ' + str(np.mean(payload)))
 plt.plot(control, label='used control')
 plt.plot(payload, label='used payload')
 plt.legend()
