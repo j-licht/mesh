@@ -177,7 +177,7 @@ network TestNetwork
         configurator: Ipv4NetworkConfigurator {
             @display("p=580,200");
         }
-        radioMedium: <default("UnitDiskRadioMedium")> like IRadioMedium {
+        radioMedium: <default("Ieee80211ScalarRadioMedium")> like IRadioMedium {
             @display("p=580,275");
 	    recordCommunicationLog = true;
         }
@@ -191,30 +191,30 @@ network TestNetwork
 	host3: TestHost {
           @display("p=400,300");
       }
-      host4: TestHost {
+        host4: TestHost {
           @display("p=200,300");
        }
         host5: TestHost {
           @display("p=300,200");
-      }
-	host6: TestHost {
+        }
+        host6: TestHost {
           @display("p=300,400");
-       }
-        host7: TestHost {
-          @display("p=400,400");
-     }
-	host8: TestHost {
-          @display("p=200,400");
-       }
-        host9: TestHost {
-          @display("p=400,200");
-     }
-	host10: TestHost {
-          @display("p=200,200");
-       }
-        host11: TestHost {
-          @display("p=400,400");
-      }
+        }
+//        host7: TestHost {
+//         @display("p=400,400");
+//     }
+ //       host8: TestHost {
+ //         @display("p=200,400");
+ //      }
+ //       host9: TestHost {
+ //         @display("p=400,200");
+ //    }
+ //       host10: TestHost {
+ //         @display("p=200,200");
+ //      }
+ //       host11: TestHost {
+ //         @display("p=400,400");
+ //     }
 
                
 }
